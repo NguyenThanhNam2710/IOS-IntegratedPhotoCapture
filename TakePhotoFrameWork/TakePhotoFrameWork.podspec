@@ -24,6 +24,10 @@ Pod::Spec.new do |spec|
   spec.source       		= { :http => 'https://github.com/NguyenThanhNam2710' }
   spec.platform     		= :ios, '11.0'
   spec.ios.deployment_target 	= '11.0'
+  spec.ios.vendored_framework = 'TakePhotoFrameWork.framework'
+  spec.resource_bundles = {
+    'TakePhotoFrameWork' => ['TakePhotoFrameWork.framework/Assets/**/*']
+  }
   
   spec.dependency 'RxSwift'
   spec.dependency 'RxCocoa'
