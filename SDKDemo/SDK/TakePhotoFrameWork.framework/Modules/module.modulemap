@@ -1,0 +1,11 @@
+framework module TakePhotoFrameWork {
+  umbrella header "TakePhotoFrameWork.h"
+
+  export *
+  module * { export * }
+}
+
+module TakePhotoFrameWork.Swift {
+    header "TakePhotoFrameWork-Swift.h"
+    requires objc
+}
